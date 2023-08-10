@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Oswald-Bold";
+    src: url("../Fonts/Oswald-Bold.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Oswald-regular";
+    src: url("../Fonts/Oswald-Regular.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../Fonts/Roboto-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("../Fonts/Roboto-Bold.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../Fonts/Roboto-Light.ttf") format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("../Fonts/Roboto-Medium.ttf") format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../Fonts//MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apollo-MT-Std';
+    src: url('../Fonts/ApolloMTStd.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
