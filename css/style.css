@@ -475,6 +475,61 @@ footer .footer_menu ul li a {
     font-size: 16px;
     line-height: 100%;
 }
+footer.new-footer .footer_menu {
+    margin-top: 0;
+}
+
+footer.new-footer {
+    padding-top: 20px;
+}
+.new-footer .footer-mail {
+    background: #ebebeb;
+    padding: 32px 0;
+}
+.new-footer .footer-mail .mail-text p {
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    line-height: 100%;
+    font-family: 'Roboto-Light';
+    color: #ff2f60;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new-footer .footer-mail .mail-form form {
+    width: 100%;
+    text-align: right;
+    max-width: 585px;
+    display: flex;
+    margin: auto;
+}
+.new-footer .bottom_footer {
+    margin-top: 0;
+}
+.new-footer .footer-mail .mail-form form input {
+    width: 100%;
+    padding: 17px 30px;
+    border: 2px solid #cbcbcb;
+    border-right: 0;
+}
+.new-footer .footer-mail .mail-form form button {
+    max-width: 170px;
+    width: 100%;
+    background: #ff2f60;
+    border: 2px solid #ff2f60;
+    color: #fff;
+    font-family: 'Roboto-Regular';
+    font-size: 20px;
+    line-height: 30px;
+}
+.new-footer .footer-mail .mail-form form input::placeholder {
+    color: #cacaca;
+    font-size: 16px;
+    line-height: 100%;
+    font-style: italic;
+}
 /****** services *************/
 .top-header {
     background: #e82f5b;
@@ -673,7 +728,7 @@ section.audience {
     margin: 0 auto;
 }
 section.launching {
-    padding: 116px 0;
+    padding: 116px 0 0;
 }
 
 section.launching .heading h2 {
@@ -757,6 +812,12 @@ section.launching .heading p {
     }
 
 }
+@media (max-width: 1300px) {
+    .launch-right img {
+        width: 100%;
+    }
+
+}
 
 @media (max-width: 1200px) {
     .main-hero .text-sec h1 {
@@ -794,7 +855,27 @@ section.launching .heading p {
         margin-left: 20px;
         margin-top: 20px;
     }
+    .why-left-img-sec img {
+        width: 100%;
+    }
+    .why-left-img-sec {
+        margin-left: 0;
+    }
+    section.why:before {
+        left: 240px;
+    }
 
+}
+@media (max-width: 1024px) {
+    section.why:before {
+        left: 150px;
+    }
+    .banner-bg {
+        right: -125px;
+    }
+    .services-hero-section .right {
+        width: 40%;
+    }
 }
 
 @media (max-width: 991px) {
@@ -832,6 +913,42 @@ section.launching .heading p {
     .margin-right {
         margin-left: 10px;
     }
+    section.services-hero-section .right img {
+        width: 100%;
+    }
+    section.services-hero-section {
+        padding: 200px 0 150px;
+    }
+    .banner-bg {
+        width: 640px;
+        top: 100px;
+        right: -15px;
+    }
+    .banner-bg {
+        right: -145px;
+    }
+    section.why:before {
+        width: 150px;
+    }
+    .why-right-img-sec h2 {
+        margin-bottom: 50px;
+    }
+    .audience-box {
+        max-width: 100%;
+    
+    }
+    .launch-left {
+        row-gap: 30px;
+        padding-right: 0;
+    }
+    .launch-desc {
+        max-width: calc(100% - 80px);
+        margin-top: 5px;
+      }
+      .new-footer .footer-mail .mail-text p {
+        font-size: 17px;
+    }
+        
 
 }
 
@@ -908,6 +1025,63 @@ section.launching .heading p {
         align-items: flex-start;
         row-gap: 10px;
     }
-
+    .ser-hero-main {
+        flex-wrap: wrap;
+    }
+    .banner-bg {
+             display: none;
+    }
+    .services-hero-section .right,
+    .services-hero-section .left.text-white {
+        width: 100%;
+    }
+    .services-cards .service-card {
+        margin-top: 70px;
+    }
+    .services-cards .service-card>img {
+        margin-bottom: 20px;
+    }
+    .services-cards .service-card h3 {
+        margin-bottom: 15px;
+    }
+    section.services-cards {
+        padding: 80px 0 80px;
+    }
+    section.why {
+             padding: 80px 0 80px;
+    }
+    .why-right-img-sec h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .why-right-img-sec h2 {
+        margin-bottom: 30px;
+    }
+    .why-right-img-sec {
+        margin-top: 50px;
+    }
+    section.why:before {
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+    }
+    .why-right-img-sec a {
+        margin-top: 40px;
+    }
+    .launch-right {
+        margin-top: 0;
+    }
+    footer .footer_menu ul li a {
+        font-size: 16px;
+    }
+    .new-footer .footer-mail .mail-form form button {
+        max-width: 100px;
+    }
+    .top-header {
+        display: none;
+    }
+    .services-hero-section .right {
+        margin-top: 50px;
+    }
 
 }
