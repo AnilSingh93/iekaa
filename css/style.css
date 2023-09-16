@@ -883,17 +883,19 @@ section.social-media {
 }
 section.social-media p.title {
     font-size: 30px;
-    line-height: 58px;
-    font-family: 'Oswald-regular';
+    line-height: 35px;
+    font-family: 'Oswald-light';
     margin-bottom: 0;
     color: #919191;
+    text-transform: uppercase;
 }
 section.social-media h2 {
     font-size: 40px;
     line-height: 58px;
-    font-family: 'Oswald-Bold';
+    font-family: 'Oswald-regular';
     color: #ff2f60;
     text-transform: uppercase;
+    margin: 0;
 }
 .social section.services-cards h2 {
     color: #ff2f60;
@@ -958,25 +960,32 @@ section.social-media h2 {
 .social-main {
     margin-top: 100px;
 }
-section.traffic {padding: 120px 0 160px;background: #ff4b75;color: #fff;}
+section.traffic {
+    padding: 209px 0 100px;
+    background: #2a3950;
+    color: #fff;
+}
 section.traffic .heading p.title {
     margin-bottom: 0;
     font-family: 'Oswald-light';
     text-transform: uppercase;
-    font-size: 30px;
-    line-height: 57px;
+    font-size: 26px;
+    line-height: 35px;
+    letter-spacing: 0.10px;
 }
 section.traffic .heading h2 {
     font-size: 40px;
-    line-height: 57px;
+    line-height: 35px;
     text-transform: uppercase;
     margin-bottom: 50px;
+    font-family: 'Oswald-regular';
+    margin-top: 5px;
 }
 section.traffic .left-sec p {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 section.traffic .left-sec .reach {
-    margin-top: 50px;
+    margin-top: 170px;
     display: flex;
     justify-content: space-between;
 }
@@ -987,6 +996,8 @@ section.traffic .left-sec .reach .info a {
     color: #fff;
     text-decoration: none;
     display: block;
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
 }
 section.traffic .left-sec .reach .reach-inner {
     display: flex;
@@ -1004,7 +1015,7 @@ section.traffic .left-sec .reach button.reach-us {
 .traffic .right-sec .taffic-card {
      padding: 50px 20px 30px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 55px;
     color: #000;
 }
 .traffic .right-sec .discover {
@@ -1020,7 +1031,7 @@ section.traffic .left-sec .reach button.reach-us {
     background-color: #ebfd73;
 }
 .traffic .right-sec .taffic-card img {
-    margin-bottom: 40px;
+    margin-bottom: 21px;
 }
 
 .traffic .right-sec .taffic-card p {
@@ -1144,6 +1155,93 @@ section.social-form .right-sec.contact form button.def_btn {
 }
 section.social-form .left-sec .socialseo-img img {
     width: 100%;
+}
+section.social-banner.disclaimer {
+    padding-bottom: 50px;
+}
+section.social-banner.disclaimer .banner-img {
+    margin-top: 50px;
+}
+section.disclaimer-text {
+    padding-top: 170px;
+}
+
+section.disclaimer-text p {
+    font-size: 20px;
+    line-height: 24px;
+    color: #919191;
+    font-family: 'Roboto-Light';
+}
+
+section.disclaimer-text p:not(:last-child) {
+    margin-bottom: 30px;
+}
+.disc-inner-text h2, .disc-inner-text h3 {
+    font-size: 26px;
+    font-family: 'Oswald-regular';
+    line-height: 24px;
+    color: #919191;
+    text-transform: uppercase;
+    margin-top: 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+.disc-inner-text h3 {
+    text-transform: unset;
+    font-family: 'Oswald-light';
+    margin-bottom: 30px;
+}
+
+.disc-inner-text ul {
+    list-style: none;
+    padding-left: 0;
+}
+.disc-inner-text a,
+.disc-inner-text ul li {
+    color: #919191;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 20px;
+    font-family: 'Roboto-Light';
+}
+.disc-inner-text h2+p {
+    margin-top: 15px;
+}
+.disc-inner-text a{
+    color: #919191;
+    text-decoration: none;
+}
+.traffic .right-sec .taffic-card p {
+    margin-top: 13px;
+    font-family: 'Roboto-Light';
+    font-size: 16px;
+    line-height: 24px;
+    color: #4d4d4d;
+}
+.traffic .right-sec .taffic-card p.title {
+    font-weight: bold;
+    font-family: 'Roboto-Bold';
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 0;
+}
+section.traffic .left-sec .reach .info a.brand-call {
+    font-size: 26px;
+    line-height: 27px;
+    font-family: 'Roboto-Bold';
+}
+button.btn-outlines {
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 0 40px 0 30px;
+    color: #fff;
+    font-family: 'Roboto-Regular';
+    font-size: 20px;
+    line-height: 30px;
+}
+button.btn-outlines img {
+    margin-left: 15px;
 }
 /****** responsive **********/
 
@@ -1310,6 +1408,14 @@ section.social-form .left-sec .socialseo-img img {
     section.social-banner .banner-img img
     {
         width: 100%;
+    }
+    section.social-banner.disclaimer .banner-img img {
+        max-width: 70%;
+        margin: 0 auto;
+        width: 100%;
+    }
+    section.disclaimer-text {
+        padding-top: 100px;
     }
 }
 @media (max-width: 767px) {
@@ -1478,6 +1584,14 @@ section.social-form .left-sec .socialseo-img img {
     section.social-form .heading h2 {
         font-size: 35px;
         margin-bottom: 35px;
+    }
+    .disc-inner-text h2, .disc-inner-text h3 {
+        font-size: 24px;
+        line-height: 22px;
+    }
+    .disc-inner-text h2, .disc-inner-text h3 {
+        font-size: 22px;
+        line-height: 30px;
     }
  
 }
