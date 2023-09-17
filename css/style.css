@@ -1456,6 +1456,152 @@ section.meet .right-sec p {
     font-size: 20px;
     line-height: 30px;
 }
+section.drop-message {
+    padding: 100px 0 70px;
+}
+
+section.drop-message .heading h2 {
+    font-size: 40px;
+    line-height: normal;
+    font-family: 'Oswald-light';
+    text-transform: uppercase;
+    color: #ff2f60;
+    font-weight: 600;
+    margin: 0;
+}
+
+section.drop-message .contact-form {
+    margin-top: 120px;
+}
+
+section.drop-message .contact-form form .form-divide {
+    max-width: 33%;
+    width: 100%;
+    display: inline-block;
+    padding-right: 10px;
+    margin-bottom: 100px;
+}
+
+section.drop-message .contact-form form .form-divide input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #c2c2c2;
+}
+
+section.drop-message .contact-form form .form-divide label {
+    color: #ff2f60;
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Roboto-Light';
+    letter-spacing: 0px;
+}
+section.drop-message .contact-form form .form-divide select:focus-visible,
+section.drop-message .contact-form form .form-inner textarea:focus-visible,
+section.drop-message .contact-form form .form-divide input:focus-visible {
+    outline: none;
+}
+section.drop-message .contact-form form .form-divide select {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #c2c2c2;
+    font-family: 'Roboto-Light';
+    font-size: 20px;
+    line-height: 24px;
+    color: #a1a1a1;
+}
+section.drop-message .contact-form form .form-inner {
+    width: 100%;
+}
+section.drop-message .contact-form form .form-inner textarea {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #c2c2c2;
+    resize: none;
+}
+section.drop-message .contact-form form .form-inner textarea::placeholder {
+    font-family: 'Roboto-Light';
+    font-size: 20px;
+    line-height: 24px;
+    color: #a1a1a1;
+}
+section.drop-message .contact-form form .form-inner label {
+    margin-bottom: 40px;
+    font-family: 'Roboto-Light';
+    font-size: 20px;
+    line-height: 40px;
+    color: #ff2f60;
+}
+section.drop-message .contact-form form .button {
+    margin-top: 115px;
+}
+
+section.drop-message .contact-form form .button button {
+    font-family: 'Roboto-Regular';
+    color: #fff;
+    border: none;
+    background: #ff2f60;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 15px  82px;
+}
+section.address {
+    padding: 120px 0;
+    background: #ff2f60;
+    color: #fff;
+}
+
+section.address a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'Roboto-medium';
+}
+
+section.address .address-main h2 {
+    text-transform: uppercase;
+    font-family: 'Oswald-light';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: normal;
+    margin: 0;
+}
+
+section.address .address-main .address-img {
+    background: #fff;
+    border-radius: 50%;
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.address .address-main .address-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+section.address .address-main .address-left p {
+    margin: 0;
+    font-family: 'Roboto-Light';
+    font-size: 24px;
+    line-height: 35px;
+}
+section.address .address-main .address-img-text {
+    margin-top: 29px;
+}
+section.address a.mail-normal {
+    font-family: 'Roboto-Light';
+}
+section.address .address-main.main-left {
+    padding-right: 30px;
+}
 
 /****** responsive **********/
 
@@ -1637,7 +1783,17 @@ section.meet .right-sec p {
         max-width: 50px;
         max-height: 50px;
     }
-        
+    section.drop-message .contact-form form .form-divide {
+        max-width: 49%;
+        padding-right: 10px;
+        margin-bottom: 80px;
+    }        
+    section.address .address-main h2 {
+        font-size: 35px;
+    }
+    section.address .address-main .address-left {
+        align-items: flex-start;
+    }
 
 }
 
@@ -1914,5 +2070,36 @@ section.meet .right-sec p {
     }
     section.meet .right-sec h2 {
         font-size: 35px;
+    }
+    section.drop-message {
+        padding: 80px 0;
+    }
+    section.drop-message .contact-form form .form-divide {
+        max-width: 100%;
+        padding-right: 0px;
+        margin-bottom: 40px;
+    }
+    section.drop-message .contact-form form .form-inner label {
+        margin-bottom: 20px;
+    }
+    section.drop-message .contact-form form .button {
+        margin-top: 80px;
+    }
+    section.address {
+        padding: 30px 0 80px;
+    }
+    section.address .address-main {
+        margin-top: 50px;
+    }
+    section.address .address-main.main-left {
+        padding-right: 0;
+    }
+    section.address a,
+    section.address .address-main .address-left p {
+        font-size: 19px;
+        line-height: 30px;
+    }
+    section.drop-message .contact-form {
+        margin-top: 50px;
     }
 }
