@@ -2,6 +2,16 @@ $(".usablity-slider .slider-inner").slick({
   arrows: false,
   dots: true
 });
+$("#side_menu").click(function(){
+  $(".header_side_menu").addClass("open");
+  $(".header-hamburger-items").addClass("open");  
+})
+$(".header-hamburger-items .header-close").click(function(){
+  $("body").removeClass("overlay");  
+  $(".header_side_menu").removeClass("open");
+  $(".header-hamburger-items").removeClass("open");  
+})
+
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
@@ -91,6 +101,6 @@ $(document).ready(function(){
         }
       ]
   })
-  
+   
 })
 

@@ -21,8 +21,8 @@ li {
     border-bottom: 1px solid #e53a63;
     box-shadow: 0 0 31px #f42153;
     padding: 23px 0;
+    position: relative;
 }
-
 .main_header .menu ul li {
     margin-right: 80px;
 }
@@ -31,12 +31,11 @@ li {
     color: #ffecec;
     text-decoration: none;
 }
-
 .main_header .menu .hamb_buttom {
     margin-left: 20px;
-    display: inherit;
+    height: 20px;
+    display: contents;
 }
-
 .main-hero {
     position: relative;
     background: url('../images/Banner_BG_1.jpg');
@@ -1607,6 +1606,80 @@ p.change_class {
 }
 section.disclaimer-text.term-condition p {
     margin-bottom: 20px;
+}
+.header_side_menu {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    top: 140px;
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+    max-height: 100%;
+    display: none;
+}
+.header_side_menu .heading-logo img {
+    width: 100%;
+    max-width: 250px;
+}
+.header_side_menu .header-main p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-family: 'Apollo-MT-Std';
+    font-size: 30px;
+    line-height: 72px;
+    color: #a5a5a5;
+    letter-spacing: -0.72px;
+}
+.header_side_menu .header-all ul li img {
+    width: 32px;
+    height: 32px;
+}
+.header_side_menu .header-all ul li:not(:last-child) {
+    margin-right: 30px;
+}
+.header_side_menu .header-all ul {
+    margin-top: 20px;
+}
+.header-hamburger-items {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: #ff2f60;
+    max-height: 640px;
+    width: 500px;
+    padding: 48px;
+    display: none;
+}
+
+.header-hamburger-items .header-close {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-bottom: 150px;
+    cursor: pointer;
+}
+.header-hamburger-items .header-close img {
+    width: 100%;
+}
+.header-hamburger-items  ul {
+    padding-left: 50px;
+}
+.header-hamburger-items ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto-Regular';
+    font-size: 30px;
+    line-height: 57px;
+    letter-spacing: -0.72px;
+}
+.header_side_menu.open {
+    display: flex;
+}
+.header-hamburger-items.open {
+    display: block;
 }
 /****** responsive **********/
 
