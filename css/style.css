@@ -1602,7 +1602,12 @@ section.address a.mail-normal {
 section.address .address-main.main-left {
     padding-right: 30px;
 }
-
+p.change_class {
+    font-size: 26px;
+}
+section.disclaimer-text.term-condition p {
+    margin-bottom: 20px;
+}
 /****** responsive **********/
 
 @media (max-width: 1400px) {
