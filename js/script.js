@@ -1,3 +1,8 @@
+$(".usablity-slider .slider-inner").slick({
+  arrows: false,
+  dots: true
+});
+
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 /* Main navigation */
@@ -55,7 +60,7 @@ tween = gsap.to(panels, {
 });
 
 $(document).ready(function(){
-  $(".marketing-inner").slick({
+    $(".marketing-inner").slick({
     slidesToShow: 4,
     slidesToScroll: 4,
     arrows: false,
@@ -85,6 +90,7 @@ $(document).ready(function(){
           }
         }
       ]
-  });
-
+  })
+  
 })
+

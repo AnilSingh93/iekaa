@@ -19,8 +19,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-
 @font-face {
     font-family: "Roboto-Regular";
     src: url("../Fonts/Roboto-Regular.ttf") format('truetype');

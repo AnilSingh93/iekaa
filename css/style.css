@@ -1243,6 +1243,220 @@ button.btn-outlines {
 button.btn-outlines img {
     margin-left: 15px;
 }
+section.services-cards.ui-ux {
+    padding: 100px 0;
+}
+section.usablity {
+    background: #2a3950;
+    padding: 120px 0 80px;
+}
+
+section.usablity .heading h2 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 35px;
+    text-transform: uppercase;
+    font-family: 'Oswald-regular';
+    margin: 0;    
+}
+section.usablity .heading p {
+    color: #fff;
+    font-family: 'Roboto-Light';
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.usablity-slider .slider-inner {
+    margin-top: 80px;
+    display: block;
+    position: relative;
+}
+.usablity-slider .slider-img img {
+    margin: 0 auto;
+    display: block;
+}
+.usablity-slider ul.slick-dots {
+    margin-top: 60px;
+}
+.process-steps {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 50px;
+}
+
+.process-steps .process-steps-inner {
+    width: calc(100% / 7);
+    text-align: center;
+}
+section.process {
+    padding: 100px 0;
+}
+
+section.process .heading h2 {
+    margin: 0;
+    font-size: 40px;
+    line-height: 35px;
+    font-family: 'Oswald-regular';
+    text-transform: uppercase;
+    color: #ff2f60;
+    margin-bottom: 50px;
+}
+
+section.process .heading p {
+    font-family: 'Roboto-Light';
+    font-size: 20px;
+    line-height: 30px;
+    color: #919191;
+}
+
+section.process .steps p {
+    font-family: 'Roboto-Regular';
+    color: #919191;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    background-color: #fff;
+    z-index: 11;
+    display: inline-block;
+}
+
+section.process .steps-images {
+    background: #ff2f60;
+    max-width: 100px;
+    max-height: 100px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 40px;
+}
+
+section.process .steps-images img {
+    display: block;
+    object-fit: cover;
+}
+section.process .steps-info-img {
+    min-height: 50px;
+    min-width: 50px;
+    background: #fff;
+    border: 3px solid #ff2f60;
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%;
+    height: 100%;
+    padding: 11px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.process .steps-info-img img {
+    width: 100%;
+    height: 100%;
+    max-width: 25px;
+    max-height: 20px;
+    object-fit: cover;
+    display: block;
+}
+
+section.process 
+ .steps-info p {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: "Roboto-Medium";
+    font-size: 20px;
+    line-height: 30px;
+    color: #919191;
+    letter-spacing: 0.10px;
+    text-align: center;
+}
+.steps:before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: -7px;
+    left: 65px;
+    border-bottom: 2px dotted #919191;
+    height: 100%;
+    z-index: -1;
+}
+.process-steps .process-steps-inner:last-child .steps:before {
+    display: none;
+}
+section.process .steps {
+    position: relative;
+}
+section.process .steps-info {position: relative;}
+
+section.process .steps-info-img:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: #ff2f60;
+    z-index: -1;
+}
+
+section.process .process-steps-inner:first-child .steps-info-img:after {
+    width: 50%;
+    right: 0;
+}
+
+section.process .process-steps-inner:last-child .steps-info-img:after {
+    width: 50%;
+    left: 0;
+}
+section.about-with-heading {
+    padding: 100px 0 130px;
+}
+
+section.about-with-heading .heading h2 {
+    color: #ff2f60;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: normal;
+    margin-bottom: 80px;
+}
+
+section.about-with-heading .about-inner-text p {
+    color: #a1a1a1;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Roboto-Light';
+    text-align: center;
+}
+
+section.about-with-heading .about-inner-text p:not(:last-child) {
+    margin-bottom: 40px;
+}
+section.meet {padding: 120px 0 100px;background: #ff2f60;color: #fff;}
+section.meet .left-sec img {
+    border-radius: 20px;
+}
+section.meet .right-sec {
+    padding-left: 60px;
+}
+section.meet .right-sec h2 {
+    font-family: 'Oswald-light';
+    font-size: 40px;
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+section.meet .right-sec p {
+    font-family: 'Roboto-Light';
+    font-size: 20px;
+    line-height: 30px;
+}
+
 /****** responsive **********/
 
 @media (max-width: 1400px) {
@@ -1316,8 +1530,15 @@ button.btn-outlines img {
     .marketing-slider-inner .marketing-img {
         padding: 50px 40px;
     }
-    
+   
 }
+
+@media (max-width: 1100px){
+    .usablity-slider .slider-img img{
+        width: 100%;
+    }
+}
+
 @media (max-width: 1024px) {
     section.why:before {
         left: 150px;
@@ -1400,6 +1621,22 @@ button.btn-outlines img {
       .new-footer .footer-mail .mail-text p {
         font-size: 17px;
     }
+    .process-steps .process-steps-inner {
+        width: calc(100% / 6);
+     }
+     section.process .steps-info p {
+    font-size: 17px;
+    line-height: 26px;
+    }
+    section.process .steps-images {
+        max-width: 80px;
+        max-height: 80px;
+    }
+    section.process .steps-images img {
+             object-fit: contain;
+        max-width: 50px;
+        max-height: 50px;
+    }
         
 
 }
@@ -1417,6 +1654,13 @@ button.btn-outlines img {
     section.disclaimer-text {
         padding-top: 100px;
     }
+    .def_btn {
+        padding: 10px 14px;
+        margin-top: 28px;
+    }
+    .def_btn img {
+        margin-left: 15px;
+     }
 }
 @media (max-width: 767px) {
 
@@ -1593,5 +1837,82 @@ button.btn-outlines img {
         font-size: 22px;
         line-height: 30px;
     }
- 
+    .process-steps {
+        flex-wrap: wrap;
+    }
+    .process-steps .process-steps-inner {
+        width: calc(100% / 2);
+        margin-top: 80px;
+    }
+    .process-steps {
+        padding: 0px 0 50px;     
+    }
+    .process-steps .process-steps-inner:nth-child(2n) .steps:before {
+        width: 50%;
+        left: 0;
+    }
+    section.process .steps-info-img:after {
+        height: 5px;
+    }
+    .process-steps .process-steps-inner:nth-child(1n) .steps-info-img:after {
+        width: 50%;
+        right: 0;
+    }
+    .process-steps .process-steps-inner:nth-child(2n) .steps-info-img:after {
+        width: 50%;
+        left: 0;
+    }
+    section.process .steps-images img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    section.process .steps-images {
+        max-width: 70px;
+        max-height: 70px;
+    }
+    section.usablity .heading h2 {
+        font-size: 35px;
+        line-height: 30px;
+    }
+    section.process .heading h2 {
+        font-size: 35px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    section.social-form .right-sec.contact form button.def_btn {
+        margin-top: 30px;
+    }
+    .def_btn {
+        padding: 10px 15px;
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .def_btn img {
+        margin-left: 10px;
+        width: 20px;
+    }
+    section.usablity,
+    section.services-cards.ui-ux {
+        padding: 80px 0;
+    }
+    section.about-with-heading {
+        padding: 80px 0;
+    }
+    section.about-with-heading .heading h2 {
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+    section.about-with-heading .about-inner-text p:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    section.meet {
+        padding: 80px 0;
+    }
+    section.meet .right-sec {
+        padding-top: 60px;
+        padding-left: 0;
+    }
+    section.meet .right-sec h2 {
+        font-size: 35px;
+    }
 }
