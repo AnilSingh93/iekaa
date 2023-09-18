@@ -1105,15 +1105,14 @@ section.social-form .heading p.title {
 section.social-form .heading p.title span {
     font-weight: bold;
 }
-
 section.social-form .heading h2 {
     font-size: 40px;
     line-height: 40px;
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 40px;
+    font-family: 'Oswald-regular';
 }
-
 section.social-form .left-sec p {
     color: #fff;
     font-family: 'Roboto-Light';
