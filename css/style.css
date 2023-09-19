@@ -400,7 +400,7 @@ section.work {
 }
 
 .work h2.head_underline:after {
-    background: #fff;
+    background: transparent;
 }
 
 .work_img {
