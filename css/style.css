@@ -1905,7 +1905,7 @@ section.clients.work .client-main {
     .main-hero .text-sec h1 {
         font-size: 80px;
     }
-
+    section.clients.work .work_heading h2,
     .work h2.head_underline,
     section.services .left-uni-head h2,
     section.unicorn .left-uni-head h2 span {
@@ -2321,4 +2321,10 @@ section.clients.work .client-main {
         line-height: 100px;
         font-size: 35px;
     }
+    section.clients.work .client-main {
+             gap: 20px;
+         }
+         section.clients.work .client-main .client-img {
+            max-width: calc(50% - 12px);
+        }
 }
