@@ -44,6 +44,10 @@ $(".usablity-slider .slider-inner").slick({
         }
       ]
   })
-   
+  $(".client-main").slick({
+    arrows: false,
+    dots: true
+  })
+  
 })
 
