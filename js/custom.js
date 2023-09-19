@@ -48,6 +48,16 @@ $(".usablity-slider .slider-inner").slick({
     arrows: false,
     dots: true
   })
+  $(".mobile-slider").slick({
+    arrows: false,
+    dots: true,
+    variableWidth: true,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 2000
+
+  })
   
+
 })
 
