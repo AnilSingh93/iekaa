@@ -3,10 +3,15 @@ $(".usablity-slider .slider-inner").slick({
     dots: true
   });
   $("#side_menu").click(function(){
+    var overyay = $("<div class='body-overlay'></div>")
+  $("body").prepend(overyay);
+  $("body").addClass("overlay");
     $(".header_side_menu").addClass("open");
     $(".header-hamburger-items").addClass("open");  
   })
   $(".header-hamburger-items .header-close").click(function(){
+    $("body").remove(overyay);
+  $("body").removeClass("overlay");
     $("body").removeClass("overlay");  
     $(".header_side_menu").removeClass("open");
     $(".header-hamburger-items").removeClass("open");  
@@ -57,7 +62,15 @@ $(".usablity-slider .slider-inner").slick({
     autoplaySpeed: 2000
 
   })
+
+  $(".website-center-inner").slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  })
   
 
 })
+
 

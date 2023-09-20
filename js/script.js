@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", () => {
+  
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 /* Main navigation */
@@ -54,3 +56,4 @@ tween = gsap.to(panels, {
     },
 });
 
+});
