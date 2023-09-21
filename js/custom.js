@@ -1,6 +1,9 @@
 $(".usablity-slider .slider-inner").slick({
     arrows: false,
-    dots: true
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true   
   });
   $("#side_menu").click(function(){
     var overyay = $("<div class='body-overlay'></div>")
@@ -18,6 +21,11 @@ $(".usablity-slider .slider-inner").slick({
   })
   
   $(document).ready(function(){
+    $(".website-center-inner").slick({
+      arrows: false,
+      dots: true
+    })
+    
     $(".marketing-inner").slick({
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -49,10 +57,7 @@ $(".usablity-slider .slider-inner").slick({
         }
       ]
   })
-  $(".client-main").slick({
-    arrows: false,
-    dots: true
-  })
+  
   $(".mobile-slider").slick({
     arrows: false,
     dots: true,
@@ -62,12 +67,39 @@ $(".usablity-slider .slider-inner").slick({
     autoplaySpeed: 2000
 
   })
-
-  $(".website-center-inner").slick({
+  $(".client-main").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
     arrows: false,
     dots: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
   })
   
 

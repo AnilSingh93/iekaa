@@ -863,9 +863,11 @@ section.marketing p {
     padding: 50px 80px;
     margin-bottom: 60px;
 }
-.marketing-slider-inner .marketing-img img{
-    min-height: 130px;
+.marketing-slider-inner .marketing-img img {
+    min-height: 80px;
     object-fit: contain;
+    max-width: 80px;
+    margin: 0 auto;
 }
 .online-ad .marketing-img {
     background: #fb8d8e;
@@ -1108,7 +1110,7 @@ section.social-form .heading p.title {
 }
 
 section.social-form .heading p.title span {
-    font-weight: bold;
+    font-family: 'Oswald-Bold';
 }
 section.social-form .heading h2 {
     font-size: 40px;
@@ -1116,7 +1118,7 @@ section.social-form .heading h2 {
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 40px;
-    font-family: 'Oswald-regular';
+    font-family: 'Oswald-Bold';
 }
 section.social-form .left-sec p {
     color: #fff;
@@ -1270,7 +1272,7 @@ section.usablity .heading p {
     font-family: 'Roboto-Light';
     font-size: 20px;
     line-height: 30px;
-    margin-top: 25px;
+    margin-top: 45px;
     margin-bottom: 20px;
 }
 .usablity-slider .slider-inner {
@@ -1292,7 +1294,7 @@ section.usablity .heading p {
 }
 
 .process-steps .process-steps-inner {
-    width: calc(100% / 7);
+    width: calc(100% / 6);
     text-align: center;
 }
 section.process {
@@ -1339,10 +1341,11 @@ section.process .steps-images {
     justify-content: center;
     margin: 50px auto 40px;
 }
-
 section.process .steps-images img {
     display: block;
-    object-fit: cover;
+    object-fit: contain;
+    width: 45px;
+    height: 40px;
 }
 section.process .steps-info-img {
     min-height: 50px;
@@ -1382,13 +1385,14 @@ section.process
     color: #919191;
     letter-spacing: 0.10px;
     text-align: center;
+    padding: 0 15px;
 }
 .steps:before {
     content: "";
     width: 100%;
     position: absolute;
     top: -7px;
-    left: 65px;
+    left: 76px;
     border-bottom: 2px dotted #919191;
     height: 100%;
     z-index: -1;
@@ -1762,17 +1766,32 @@ section.clients.work .client-main .client-img {
     box-shadow: 4px 5px 5px #ebebeb;
     max-width: calc(25% - 60px);
     width: 100%;
-    padding: 24px 20px;
+    padding: 10px 20px;
+    margin: 0 20px;
+    /*
     display: flex;
     align-items: center;
     justify-content: center;
+    */
 }
+section.clients.work .client-main .client-img .client-img-logo {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    max-height: 145px;
+    max-height: 100%;
+}
+section.clients.work ul.slick-dots {
+    margin-top: 70px;
+}
+
+/*
 section.clients.work .client-main {
     display: flex;
     gap: 80px;
     flex-wrap: wrap;
 }
-/*
 .main-hero .text-sec span.ideas {
     position: absolute;
     top: -30px;
@@ -1890,8 +1909,8 @@ section.app-design .mobile-left h2 {
 section.app-design:after {
     content: "";
     position: absolute;
-    bottom: -310px;
-    right: -32%;
+    bottom: -390px;
+    right: -22%;
     width: 100%;
     height: 100%;
     background: #1d2b40;
@@ -1908,26 +1927,36 @@ section.app-design:after {
 .mobile-right {
     max-width: 390px;
     height: 700px;
-    overflow: hidden;
     margin: 0 auto;
     background: url("../images/work/mobile.png");
     padding: 20px 70px 0 20px;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+   /* overflow: hidden;   */
     z-index: 1;
+}
+.mobile-right ul.slick-dots {
+    margin-top: 50px;
+}
+.mobile-slider-img img{
+    max-width: 390px;
+  max-height: 666px; 
+
+   /* border-radius: 31px; */
+    min-width: 360px;
+   /* min-height: 659px; */
+    min-height: 290px;
+    object-position: left;
+    background-color: transparent;
+    overflow: hidden;
 }
 .mobile-slider-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    max-width: 390px;
-    max-height: 666px;
-    border-radius: 31px;
-    min-width: 390px;
-    min-height: 659px;
-    object-position: left;
-    background-color: #fff;
+    position: relative;
+    left: -5px;
+    top: -1px;
 }
 section.projects {
     padding: 100px 0 100px;
@@ -1983,7 +2012,7 @@ section.own-website .heading h2 span {
 }
 
 section.own-website .heading p {
-    margin: 35px 0 50px;
+    margin: 35px 0 80px;
     font-family: 'Roboto-Light';
     font-size: 16px;
     line-height: 24px;
@@ -2015,12 +2044,29 @@ section.own-website .heading p {
     align-items: center;
     justify-content: center;
 }
+.webite-slider {
+    width: 25%;
+}
 
 .website-icons img {
     width: 25px;
     height: 25px;
-    object-fit: contain;
+    object-fit: contain;    
 }
+.website-img img,
+.website-img {
+    width: 100%;
+}
+.website-center ul.slick-dots {
+    margin-top: 50px;
+}
+body.design footer.new-footer {
+    padding-top: 50px;
+} 
+.work{
+    position: relative;
+}
+
 /****** responsive **********/
 
 @media (max-width: 1400px) {
@@ -2037,6 +2083,11 @@ section.own-website .heading p {
         max-height: 100px;
         margin: 0 auto;
     }
+    section.app-design:after {
+        bottom: -290px;
+        right: -32%;
+        transform: rotate(139deg);
+    }    
 
 }
 @media (max-width: 1300px) {
@@ -2198,6 +2249,7 @@ section.own-website .heading p {
      section.process .steps-info p {
     font-size: 17px;
     line-height: 26px;
+
     }
     section.process .steps-images {
         max-width: 80px;
@@ -2219,6 +2271,9 @@ section.own-website .heading p {
     section.address .address-main .address-left {
         align-items: flex-start;
     }
+    section.process .steps-info p {
+    padding: 0;
+}
 
 }
 
@@ -2601,4 +2656,36 @@ section.own-website .heading p {
         .traffic .right-sec.ps-5 {
             padding-left: 0 !important;
         }
+        .website-left .website-left-inner h3, .website-left .website-left-inner p {
+            text-align: left;
+        }
+        .website-center {
+            margin: 40px 0;
+        }
+        section.launching {
+            margin-bottom: 50px;
+        }
+        section.launching .heading h2 {
+            font-size: 35px;
+        }
+        section.clients.work {
+                     padding: 100px 0;
+        }
+        section.app-design .mobile-left h2 {
+            font-size: 50px;
+        }
+        
+        .mobile-right {
+            max-width: 100%;
+        }
+        .mobile-slider-img img {
+            max-height: 631px;
+        }
+        .mobile-right {
+            padding: 20px 0 0 20px;
+        }
+        section.app-design:after {
+            display: none;
+         }
+
 }
