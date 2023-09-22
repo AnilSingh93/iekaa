@@ -12,10 +12,9 @@ $(".usablity-slider .slider-inner").slick({
     $(".header_side_menu").addClass("open");
     $(".header-hamburger-items").addClass("open");  
   })
-  $(".header-hamburger-items .header-close").click(function(){
-    $("body").remove(overyay);
-  $("body").removeClass("overlay");
+  $(document).on("click", ".header-hamburger-items .header-close img", function(){
     $("body").removeClass("overlay");  
+    $("body").children(".body-overlay").remove();
     $(".header_side_menu").removeClass("open");
     $(".header-hamburger-items").removeClass("open");  
   })
@@ -101,7 +100,38 @@ $(".usablity-slider .slider-inner").slick({
         }
       ]
   })
+
+  var $images = $('.parallax-img');
+var window_h = $(window).height();
+
+$(window).scroll(function() {
+    var windowScrollTop = $(window).scrollTop();
   
+    if (windowScrollTop == 0) {
+       TweenLite.to($images, 1.2, {
+          yPercent: 0,
+          ease: Power1.easeOut,
+          overwrite: 0
+       });
+    }
+    else{   
+       $images.each(function() {
+          var elementOffsetTop = $(this).offset().top,
+             element_h = $(this).height(),          
+             velocity = $(this).data('velocity');
+
+             if (windowScrollTop + window_h > elementOffsetTop && windowScrollTop  < elementOffsetTop + element_h)
+             {             
+                
+               TweenLite.to($(this), 1.2, {
+                 yPercent: (windowScrollTop + window_h - elementOffsetTop) / window_h * velocity,
+                 ease: Power1.easeOut,
+                 overwrite: 0
+               });
+             }
+       });
+    }
+});
 
 })
 

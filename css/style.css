@@ -25,6 +25,7 @@ li {
     box-shadow: 0 0 31px #f42153;
     padding: 23px 0;
     position: relative;
+    z-index: 1;
 }
 .main_header .menu ul li {
     margin-right: 80px;
@@ -390,6 +391,7 @@ section.services .left-uni-head p {
 section.work {
     background: #2c4146;
     padding: 65px 0 70px;
+    overflow: hidden;
 }
 
 .work h2.head_underline {
@@ -541,6 +543,8 @@ footer.new-footer {
 .top-header {
     background: #e82f5b;
     padding: 10px 0;
+    z-index: 1;
+    position: relative;
 }
 
 .top-header ul li:not(:last-child) {
@@ -1629,6 +1633,7 @@ section.disclaimer-text.term-condition p {
     min-height: 500px;
     max-height: 100%;
     display: none;
+    z-index: 1;
 }
 .header_side_menu .heading-logo img {
     width: 100%;
@@ -1710,16 +1715,6 @@ section.disclaimer-text.term-condition p {
     visibility: visible;
     display: block;
 }
-.full-width-submenu:before {
-    content: "";
-    position: absolute;
-    background: #fff;
-    width: 200%;
-    left: -50%;
-    height: 100%;
-    z-index: -1;
-}
-body {overflow-x: hidden;}
 .full-width-submenu .full-width-inner {
     padding-bottom: 50px;
     display: flex;
@@ -1985,7 +1980,8 @@ section.projects {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #4c4c4c7a;
+    background-color: #000;
+    opacity: 0.5;
     z-index: 1;
 }
 body.overlay {
@@ -2066,7 +2062,21 @@ body.design footer.new-footer {
 .work{
     position: relative;
 }
-
+.header-hamburger-items ul li {
+    margin-bottom: 10px;
+}
+.navbar {
+    position: unset !important;
+}
+.header-hamburger-items {
+    width: 400px;
+}
+.full-width-submenu .full-width-inner p.subtitle {
+    font-size: 25px;
+}
+.full-width-submenu .full-width-inner ul li a {
+    font-size: 17px;
+}
 /****** responsive **********/
 
 @media (max-width: 1400px) {
@@ -2687,5 +2697,27 @@ body.design footer.new-footer {
         section.app-design:after {
             display: none;
          }
+         .list-with-title {
+            padding-top: 20px;
+        }
+        .full-width-submenu .full-width-inner {
+            padding-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .header-hamburger-items {
+            width: 95%;
+            height: 100%;
+            max-height: 100%;
+        }
+        .header-hamburger-items .header-close {
+            margin-bottom: 50px;
+        }
+        .header_side_menu.open {
+            display: none;
+        }
+        body.overlay {
+            overflow-y: hidden;
+        }
+        
 
 }
