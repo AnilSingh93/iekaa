@@ -1663,7 +1663,7 @@ section.disclaimer-text.term-condition p {
 	left: 0;
 	width: 100%;
 	background: var(--white);
-	top: 140px;
+	top: 133px;
 	display: flex;
 	align-items: center;
 	min-height: 500px;
@@ -1700,11 +1700,12 @@ section.disclaimer-text.term-condition p {
 	right: 0;
 	height: 100%;
 	background: var(--primary-color);
-	max-height: 640px;
+	max-height: 633px;
 	width: 500px;
 	padding: 48px;
 	display: none;
 	z-index: 1111;
+	border: 1px solid white;
 }
 .header-hamburger-items .header-close {
 	width: 40px;
@@ -2104,7 +2105,7 @@ body.design footer.new-footer {
 	position: unset !important;
 }
 .header-hamburger-items {
-	width: 400px;
+	width: 465px;
 }
 .full-width-submenu .full-width-inner p.subtitle {
 	font-size: 25px;
