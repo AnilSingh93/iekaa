@@ -2,6 +2,7 @@
 
 :root {
 	--primary-color: #ff2f60;
+	--white: #fff;
 }
 html,
 body {
@@ -77,7 +78,7 @@ li {
 	position: relative;
 	width: 25px;
 	height: 2px;
-	background: #fff;
+	background: var(--white);
 	display: inline-block;
 	cursor: pointer;
 }
@@ -89,7 +90,7 @@ li {
 	left: 0;
 	width: 25px;
 	height: 2px;
-	background: #fff;
+	background: var(--white);
 }
 
 .main_header .menu .hamb_buttom span:after {
@@ -98,7 +99,7 @@ li {
 	top: 5px;
 	height: 2px;
 	width: 25px;
-	background: #fff;
+	background: var(--white);
 }
 
 .main-hero .carousel-indicators button {
@@ -106,7 +107,7 @@ li {
 	line-height: 24px;
 	font-weight: bold;
 	font-family: 'Roboto-Bold';
-	color: #fff;
+	color: var(--white);
 	position: relative;
 	display: inline-block;
 	height: auto;
@@ -120,13 +121,13 @@ li {
 	top: 50%;
 	right: 30%;
 	height: 2px;
-	background: #fff;
+	background: var(--white);
 	cursor: pointer;
 	transform: translateY(-50%);
 }
 
 .main-hero .text-sec h1 {
-	color: #fff;
+	color: var(--white);
 	text-transform: uppercase;
 	font-size: 150px;
 	font-family: 'Oswald-Bold';
@@ -173,14 +174,17 @@ li {
 }
 
 .def_btn {
-	border: 2px solid #fff;
+	border: 2px solid var(--white);
 	display: inline-block;
 	padding: 13px 26px;
 	text-decoration: none;
-	color: #fff;
+	color: var(--white);
 	font-size: 20px;
 	line-height: 30px;
 	margin-top: 28px;
+}
+.def_btn:hover{
+	color: var(--white);
 }
 
 .def_btn img {
@@ -206,7 +210,7 @@ li {
 	height: 15px;
 	width: 4px;
 	border-radius: inherit;
-	background: #fff;
+	background: var(--white);
 	animation: scroll_1 2.75s ease-in-out infinite;
 	margin: 0 auto;
 }
@@ -216,7 +220,7 @@ li {
 	position: relative;
 	height: 51px;
 	width: 29px;
-	border: 2px solid #fff;
+	border: 2px solid var(--white);
 	border-radius: 1em;
 	margin-left: auto;
 	margin-right: 5px;
@@ -268,7 +272,7 @@ li {
 	top: 0;
 	width: 50%;
 	height: 60%;
-	background: #fff;
+	background: var(--white);
 }
 
 .scroll_icon .chevron:before {
@@ -369,7 +373,7 @@ section.services {
 
 section.services .left-uni-head h2 {
 	font-size: 160px;
-	color: #fff;
+	color: var(--white);
 	letter-spacing: -5px;
 	margin: 0;
 	font-family: 'Oswald-Bold';
@@ -378,13 +382,12 @@ section.services .left-uni-head h2 {
 }
 
 section.services .left-uni-head h2.head_underline:after {
-	background-color: #fff;
+	background-color: var(--white);
 }
-
 section.services .left-uni-head p {
 	font-size: 30px;
 	line-height: 72px;
-	color: #fff;
+	color: var(--white);
 	margin: 0;
 	font-family: 'Roboto-Medium';
 	text-transform: uppercase;
@@ -398,7 +401,7 @@ section.work {
 }
 
 .work h2.head_underline {
-	color: #fff;
+	color: var(--white);
 	font-size: 150px;
 	line-height: 100%;
 	font-family: 'Oswald-Bold';
@@ -531,7 +534,7 @@ footer.new-footer {
 	width: 100%;
 	background: var(--primary-color);
 	border: 2px solid var(--primary-color);
-	color: #fff;
+	color: var(--white);
 	font-family: 'Roboto-Regular';
 	font-size: 20px;
 	line-height: 30px;
@@ -632,9 +635,14 @@ body.services header {
 }
 
 .services-cards .service-card {
-	margin-top: 170px;
+	margin-top: 100px;
+    transition: all 0.5s linear;
+    padding: 50px 30px;
 }
-
+.services-cards .service-card:hover {
+    background: #fcf0f3;
+    box-shadow: 2px 2px 3px #efd4d4;
+}
 .services-cards .service-card > img {
 	width: 80px;
 	height: 70px;
@@ -658,7 +666,7 @@ body.services header {
 }
 
 section.services-cards {
-	padding: 100px 0 170px;
+	padding: 100px 0 100px;
 	background-color: #fbfbfb;
 }
 
@@ -686,7 +694,7 @@ section.why:before {
 }
 
 .why-right-img-sec h2 {
-	color: #fff;
+	color: var(--white);
 	font-size: 60px;
 	line-height: 70px;
 	letter-spacing: -0.3px;
@@ -697,7 +705,7 @@ section.why:before {
 	font-family: 'Roboto-Bold';
 }
 .why-right-img-sec p {
-	color: #fff;
+	color: var(--white);
 	font-family: 'Roboto-Light';
 	font-size: 16px;
 	line-height: 24px;
@@ -705,7 +713,7 @@ section.why:before {
 .why-right-img-sec a {
 	margin-top: 70px;
 	display: inline-block;
-	color: #fff;
+	color: var(--white);
 	text-decoration: none;
 	background: var(--primary-color);
 	padding: 15px 73px;
@@ -725,7 +733,7 @@ section.audience {
 }
 
 .audience-box h3 {
-	color: #fff;
+	color: var(--white);
 	margin: 16px 0 24px;
 	font-family: 'Roboto-Medium';
 	font-size: 18px;
@@ -733,7 +741,7 @@ section.audience {
 }
 
 .audience-box p {
-	color: #fff;
+	color: var(--white);
 	font-family: 'Roboto-Light';
 	font-size: 14px;
 	line-height: 24px;
@@ -818,7 +826,7 @@ section.launching .heading p {
 section.social-banner {
 	background: #ff4b75;
 	padding: 80px 0;
-	color: #fff;
+	color: var(--white);
 }
 section.social-banner h1 {
 	font-family: 'Oswald-regular';
@@ -837,7 +845,7 @@ section.social-banner .banner-img {
 section.marketing {
 	background: #2a3950;
 	padding: 120px 0 50px;
-	color: #fff;
+	color: var(--white);
 }
 
 section.marketing h2 {
@@ -986,7 +994,7 @@ section.social-media h2 {
 section.traffic {
 	padding: 209px 0 100px;
 	background: #2a3950;
-	color: #fff;
+	color: var(--white);
 }
 section.traffic .heading p.title {
 	margin-bottom: 0;
@@ -1016,7 +1024,7 @@ section.traffic .left-sec .reach .info {
 	margin-left: 15px;
 }
 section.traffic .left-sec .reach .info a {
-	color: #fff;
+	color: var(--white);
 	text-decoration: none;
 	display: block;
 	font-family: 'Roboto-Regular';
@@ -1028,7 +1036,7 @@ section.traffic .left-sec .reach .reach-inner {
 }
 section.traffic .left-sec .reach button.reach-us {
 	border: none;
-	background: #fff;
+	background: var(--white);
 	font-family: 'Roboto-Regular';
 	font-size: 20px;
 	line-height: 30px;
@@ -1119,7 +1127,7 @@ section.social-form {
 
 section.social-form .heading p.title {
 	margin-bottom: 0;
-	color: #fff;
+	color: var(--white);
 	font-size: 30px;
 	line-height: 40px;
 	font-family: 'Oswald-light';
@@ -1127,18 +1135,18 @@ section.social-form .heading p.title {
 }
 
 section.social-form .heading p.title span {
-	font-family: 'Oswald-Bold';
+	font-family: 'Oswald-regular';
 }
 section.social-form .heading h2 {
 	font-size: 40px;
 	line-height: 40px;
-	color: #fff;
+	color: var(--white);
 	text-transform: uppercase;
 	margin-bottom: 40px;
-	font-family: 'Oswald-Bold';
+	font-family: 'Oswald-regular';
 }
 section.social-form .left-sec p {
-	color: #fff;
+	color: var(--white);
 	font-family: 'Roboto-Light';
 	font-size: 20px;
 	line-height: 27px;
@@ -1149,13 +1157,13 @@ section.social-form .left-sec .socialseo-img {
 }
 section.social-form .right-sec.contact form input {
 	background-color: #ed3963;
-	color: #fff;
+	color: var(--white);
 	border: none;
 	height: 60px;
 }
 section.social-form .right-sec.contact form .input-group textarea::placeholder,
 section.social-form .right-sec.contact form input::placeholder {
-	color: #fff;
+	color: var(--white);
 }
 section.social-form .right-sec.contact form span#basic-addon1 {
 	padding: 0 15px;
@@ -1171,7 +1179,7 @@ section.social-form .right-sec.contact form .input-group textarea {
 	resize: none;
 	background-color: #ed3963;
 	border: none;
-	color: #fff;
+	color: var(--white);
 	padding: 25px;
 }
 section.social-form .right-sec.contact form button.def_btn {
@@ -1259,9 +1267,9 @@ section.traffic .left-sec .reach .info a.brand-call {
 }
 button.btn-outlines {
 	background: transparent;
-	border: 2px solid #fff;
+	border: 2px solid var(--white);
 	padding: 0 40px 0 30px;
-	color: #fff;
+	color: var(--white);
 	font-family: 'Roboto-Regular';
 	font-size: 20px;
 	line-height: 30px;
@@ -1278,7 +1286,7 @@ section.usablity {
 }
 
 section.usablity .heading h2 {
-	color: #fff;
+	color: var(--white);
 	font-size: 40px;
 	line-height: 35px;
 	text-transform: uppercase;
@@ -1286,7 +1294,7 @@ section.usablity .heading h2 {
 	margin: 0;
 }
 section.usablity .heading p {
-	color: #fff;
+	color: var(--white);
 	font-family: 'Roboto-Light';
 	font-size: 20px;
 	line-height: 30px;
@@ -1342,7 +1350,7 @@ section.process .steps p {
 	font-size: 20px;
 	line-height: 30px;
 	margin: 0;
-	background-color: #fff;
+	background-color: var(--white);
 	z-index: 11;
 	display: inline-block;
 }
@@ -1368,7 +1376,7 @@ section.process .steps-images img {
 section.process .steps-info-img {
 	min-height: 50px;
 	min-width: 50px;
-	background: #fff;
+	background: var(--white);
 	border: 3px solid var(--primary-color);
 	border-radius: 50%;
 	max-width: 50px;
@@ -1468,7 +1476,7 @@ section.about-with-heading .about-inner-text p:not(:last-child) {
 section.meet {
 	padding: 120px 0 100px;
 	background: var(--primary-color);
-	color: #fff;
+	color: var(--white);
 }
 section.meet .left-sec img {
 	border-radius: 20px;
@@ -1482,7 +1490,14 @@ section.meet .right-sec h2 {
 	line-height: normal;
 	text-transform: uppercase;
 	font-weight: 600;
-	margin-bottom: 20px;
+	margin-bottom: 0;
+}
+section.meet .right-sec p.position {
+    margin-bottom: 30px;
+    font-family: 'Roboto-Medium';
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: normal;
 }
 section.meet .right-sec p {
 	font-family: 'Roboto-Light';
@@ -1572,7 +1587,7 @@ section.drop-message .contact-form form .button {
 
 section.drop-message .contact-form form .button button {
 	font-family: 'Roboto-Regular';
-	color: #fff;
+	color: var(--white);
 	border: none;
 	background: var(--primary-color);
 	font-size: 20px;
@@ -1582,11 +1597,11 @@ section.drop-message .contact-form form .button button {
 section.address {
 	padding: 120px 0;
 	background: var(--primary-color);
-	color: #fff;
+	color: var(--white);
 }
 
 section.address a {
-	color: #fff;
+	color: var(--white);
 	text-decoration: none;
 	font-size: 24px;
 	line-height: 36px;
@@ -1603,7 +1618,7 @@ section.address .address-main h2 {
 }
 
 section.address .address-main .address-img {
-	background: #fff;
+	background: var(--white);
 	border-radius: 50%;
 	max-width: 40px;
 	max-height: 40px;
@@ -1645,7 +1660,7 @@ section.disclaimer-text.term-condition p {
 	position: absolute;
 	left: 0;
 	width: 100%;
-	background: #fff;
+	background: var(--white);
 	top: 140px;
 	display: flex;
 	align-items: center;
@@ -1704,7 +1719,7 @@ section.disclaimer-text.term-condition p {
 }
 .header-hamburger-items ul li a {
 	text-decoration: none;
-	color: #fff;
+	color: var(--white);
 	font-family: 'Roboto-Regular';
 	font-size: 30px;
 	line-height: 57px;
@@ -1720,7 +1735,7 @@ section.disclaimer-text.term-condition p {
 .full-width-submenu {
 	position: absolute;
 	left: 0;
-	background: #fff;
+	background: var(--white);
 	top: 100%;
 	width: 100%;
 	z-index: 1111111111;
@@ -1776,7 +1791,7 @@ section.clients.work .client-main .client-img img {
 	object-fit: contain;
 }
 section.clients.work .client-main .client-img {
-	background: #fff;
+	background: var(--white);
 	box-shadow: 4px 5px 5px #ebebeb;
 	max-width: calc(25% - 60px);
 	width: 100%;
@@ -1820,7 +1835,7 @@ section.clients.work .client-main {
     justify-content: center;
     font-family: 'Oswald-Bold';
     font-size: 60px;
-    color: #fff;
+    color: var(--white);
     transform: rotate(-20deg);
 }
 */
@@ -1838,7 +1853,7 @@ section.clients.work .client-main {
 	justify-content: center;
 	font-family: 'Oswald-Bold';
 	font-size: 50px;
-	color: #fff;
+	color: var(--white);
 	transform: rotate(-20deg);
 }
 section.done-work {
@@ -1869,7 +1884,7 @@ section.done-work .heading h2 {
 }
 .filter-tab ul.nav.nav-tabs button.active {
 	background-color: var(--primary-color);
-	color: #fff;
+	color: var(--white);
 }
 .filter-tab .tab-content .tab-content-main {
 	display: flex;
@@ -2008,7 +2023,7 @@ body.overlay {
 section.own-website {
 	padding: 120px 0;
 	background: #253c42;
-	color: #fff;
+	color: var(--white);
 }
 
 section.own-website .heading h2 {
@@ -2094,6 +2109,14 @@ body.design footer.new-footer {
 }
 .full-width-submenu .full-width-inner ul li a {
 	font-size: 17px;
+}
+.work .work_img img {
+    max-height: 322px;
+    object-fit: cover;
+    object-position: top;
+}
+.work_img.center-position img {
+    object-position: 50% 50%;
 }
 /****** responsive **********/
 
@@ -2393,7 +2416,7 @@ body.design footer.new-footer {
 	}
 
 	.work_img {
-		margin-top: 50px;
+		margin-top: 30px;
 	}
 
 	.left_col {
@@ -2729,5 +2752,17 @@ body.design footer.new-footer {
 	}
 	body.overlay {
 		overflow-y: hidden;
+	}
+	section.work {
+		padding: 100px 20px 20px;
+	}
+	.margin-right {
+		margin-left: 0;
+	}
+	section.work .work_heading {
+		margin-bottom: 20px;
+	}
+	.services-cards .service-card {
+		padding: 20px 10px;
 	}
 }

@@ -14,16 +14,16 @@ article#panel-2 {
     background: url("../images/services-bg1.png");    
 }
 article#panel-3 {
-    background: url("../images/services-bg2.png");
+    background: url("../images/services-bg2-bkp.png");
 }
 article#panel-4 {
     background: url("../images/services-bg3.png");
  }
  article#panel-5 {
-    background: url("../images/services-bg4.png");
+    background: url("../images/services-bg4-bkp.png");
  }
  article#panel-6 {
-    background: url("../images/services-bg5.png");
+    background: url("../images/services-bg5-bkp.png");
  }
  
 div#panels-container {
@@ -91,6 +91,10 @@ h2.services-underline span:before {
 .servi-img img {
     width: 100%;
 }
+.ser-desc.pd-r-5 {
+    padding-right: 100px;
+}
+
 
 @media (max-width: 1400px){
     .ml-120 {
