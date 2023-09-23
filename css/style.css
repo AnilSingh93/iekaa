@@ -27,14 +27,16 @@ li {
 	background: #f42153;
 	border-bottom: 1px solid #e53a63;
 	box-shadow: 0 0 31px #f42153;
-	padding: 23px 0;
 	position: relative;
 	z-index: 1;
 }
 .main_header .menu ul li {
 	margin-right: 80px;
+	
 }
-
+.main_header .menu>ul>li {
+		padding: 23px 0;
+}
 .main_header .menu ul li a {
 	color: #ffecec;
 	text-decoration: none;
@@ -1744,7 +1746,7 @@ section.disclaimer-text.term-condition p {
 	opacity: 0;
 	visibility: hidden;
 }
-.menu ul li a:hover + .full-width-submenu {
+.menu ul li:hover .full-width-submenu {
 	opacity: 1;
 	visibility: visible;
 	display: block;
