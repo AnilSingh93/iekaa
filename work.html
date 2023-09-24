@@ -1,589 +1,930 @@
-<!doctype html>
+<!-- @format -->
+
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		/>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+		<!-- slick slider -->
+		<link rel="stylesheet" href="css/slick.css" />
+		<title>iekaa</title>
+	</head>
 
-    <!-- slick slider -->
-    <link rel="stylesheet" href="css/slick.css">
-    <title>Iekaa</title>
-</head>
+	<body class="social">
+		<header>
+			<div class="top-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-12">
+							<div class="header-inner">
+								<ul class="mb-0 d-flex justify-content-end list-inline">
+									<li>
+										<a
+											class="text-decoration-none"
+											href="mailto: info@iekaadvertising.com"
+											><i class="far fa-envelope"></i>
+											info@iekaadvertising.com</a
+										>
+									</li>
+									<li>
+										<a class="text-decoration-none" href="tel: 9540532286"
+											><i class="fas fa-phone-alt"></i> 9540532286</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-<body class="social">
+			<div class="main_header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-12">
+							<div class="navbar">
+								<div
+									class="nav d-flex justify-content-between w-100 align-items-center"
+								>
+									<div class="logo">
+										<a href="/"><img src="images/Logo_Header.png" alt="" /></a>
+									</div>
+									<div class="menu d-flex align-items-center">
+										<ul class="list-inline d-flex mb-0">
+											<li>
+												<a href="#">Services</a>
+												<div class="full-width-submenu">
+													<div class="container">
+														<div class="full-width-inner">
+															<div class="left-menu">
+																<div class="list-with-title">
+																	<p class="subtitle">Social Media Marketing</p>
+																	<ul class="list-inline">
+																		<li>
+																			<a href="#">Search Engine Optimization</a>
+																		</li>
+																		<li>
+																			<a href="">Social Media Marketing</a>
+																		</li>
+																		<li><a href="">PPC Advertising </a></li>
+																		<li><a href="">E-mail Marketing</a></li>
+																		<li>
+																			<a href="">Social Media Marketing</a>
+																		</li>
+																	</ul>
+																</div>
 
-    <header>
-        <div class="top-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-12">
-                        <div class="header-inner">
-                            <ul class="mb-0 d-flex justify-content-end list-inline">
-                                <li><a class="text-decoration-none" href="mailto: info@iekaadvertising.com"><i
-                                            class="far fa-envelope"></i>
-                                        info@iekaadvertising.com</a></li>
-                                <li><a class="text-decoration-none" href="tel: 9540532286"><i
-                                            class="fas fa-phone-alt"></i> 9540532286</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+																<div class="list-with-title">
+																	<p class="subtitle">Branding</p>
+																	<ul class="list-inline">
+																		<li><a href="#">Logo Design</a></li>
+																		<li><a href="">Visual Identity</a></li>
+																		<li><a href="">Print Advertisement</a></li>
+																		<li><a href="">Rebranding</a></li>
+																		<li>
+																			<a href=""
+																				>Outdoor & Events Advertising</a
+																			>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<div class="center-menu">
+																<div class="list-with-title">
+																	<p class="subtitle">Website Design</p>
+																	<ul class="list-inline">
+																		<li>
+																			<a href="#">Static & Dynamic Website</a>
+																		</li>
+																		<li><a href="">E-Commerce Website</a></li>
+																		<li>
+																			<a href=""
+																				>Mobile App Design & Development</a
+																			>
+																		</li>
+																		<li><a href="">Portfolio Websites</a></li>
+																		<li><a href="">Blog Websites</a></li>
+																	</ul>
+																</div>
+																<div class="list-with-title">
+																	<p class="subtitle">Ui/Ux Design</p>
+																	<ul class="list-inline">
+																		<li>
+																			<a href="#"
+																				>Product Design & Development</a
+																			>
+																		</li>
+																		<li>
+																			<a href="">Wireframing & Prototyping</a>
+																		</li>
+																		<li><a href="">Responsive Design</a></li>
+																	</ul>
+																</div>
+															</div>
+															<div class="right-menu"></div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li><a href="#">Our Work</a></li>
+										</ul>
+										<div class="hamb_buttom" id="side_menu">
+											<span></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header_side_menu" aria-label="false">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-12">
+							<div class="header-all">
+								<div class="header-main">
+									<div class="heading-logo">
+										<img src="images/footer-logo.png" alt="" />
+									</div>
+									<p>Come Together. Grow Together</p>
+								</div>
+								<ul
+									class="list-inline footer_social d-flex align-items-center text-center"
+								>
+									<li>
+										<a href=""><img src="images/insta.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="images/linkedin.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="images/fb.png" alt="" /></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-hamburger-items">
+				<div class="header-close">
+					<img src="images/close-icon.png" alt="" />
+				</div>
+				<ul class="list-inline">
+					<li><a href="">About Us</a></li>
+					<li><a href="">Our Client</a></li>
+					<li><a href="">Our Work</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
+			</div>
+		</header>
 
-        <div class="main_header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-12">
-                        <div class="navbar">
-                            <div class="nav d-flex justify-content-between w-100 align-items-center">
-                                <div class="logo">
-                                    <a href="/"><img src="images/Logo_Header.png" alt=""></a>
-                                </div>
-                                <div class="menu d-flex align-items-center">
-                                    <ul class="list-inline d-flex  mb-0">
-                                        <li><a href="#">Services</a>
-                                            <div class="full-width-submenu">
-                                                <div class="container">
-                                                <div class="full-width-inner">
-                                                    <div class="left-menu">
-                                                        <div class="list-with-title">
-                                                            <p class="subtitle">Social Media Marketing</p>
-                                                            <ul class="list-inline">
-                                                                <li><a href="#">Search Engine Optimization</a></li>
-                                                                <li><a href="">Social Media Marketing</a></li>
-                                                                <li><a href="">PPC Advertising  </a></li>
-                                                                <li><a href="">E-mail Marketing</a></li>
-                                                                <li><a href="">Social Media Marketing</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        
-                                                        <div class="list-with-title">
-                                                            <p class="subtitle">Branding</p>
-                                                            <ul class="list-inline">
-                                                                <li><a href="#">Logo Design</a></li>
-                                                                <li><a href="">Visual Identity</a></li>
-                                                                <li><a href="">Print Advertisement</a></li>
-                                                                <li><a href="">Rebranding</a></li>
-                                                                <li><a href="">Outdoor & Events Advertising</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="center-menu">
-                                                            
-                                                        <div class="list-with-title">
-                                                            <p class="subtitle">Website Design</p>
-                                                            <ul class="list-inline">
-                                                                <li><a href="#">Static & Dynamic Website</a></li>
-                                                                <li><a href="">E-Commerce Website</a></li>
-                                                                <li><a href="">Mobile App Design & Development</a></li>
-                                                                <li><a href="">Portfolio Websites</a></li>
-                                                                <li><a href="">Blog Websites</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="list-with-title">
-                                                            <p class="subtitle">Ui/Ux Design</p>
-                                                            <ul class="list-inline">
-                                                                <li><a href="#">Product Design & Development</a></li>
-                                                                <li><a href="">Wireframing & Prototyping</a></li>
-                                                                <li><a href="">Responsive Design</a></li>
-                                                                
-                                                            </ul>
-                                                        </div>
+		<section class="social-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-12">
+						<div class="heading text-center">
+							<h1>OUR PORTFOLIO</h1>
+							<p>
+								We own our ideas and we never fall short of them. Some see the
+								day of light and our ambitions become reality. It's a proud
+								moment for us when our campaigns have a measurable impact and it
+								further encourages us to work harder with passion to own more
+								campaigns for our exceptional clients. Have a look at some of
+								the spectacular work we at Iekaa have executed!
+							</p>
+						</div>
+						<div class="banner-img text-center">
+							<img src="./images/work-banner.png" alt="social banner" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-                                                    </div>
-                                                    <div class="right-menu"> </div>
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </li>
-                                        <li><a href="#">Our Work</a></li>
-                                    </ul>
-                                    <div class="hamb_buttom" id="side_menu">
-                                        <span></span>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          
-        </div>
-        <div class="header_side_menu" aria-label="false">
-            <div class="container">
-              <div class="row">
-                  <div class="col-12 col-lg-12">
-                      <div class="header-all">
-                      <div class="header-main">
-                          <div class="heading-logo">
-                              <img src="images/footer-logo.png" alt="">
-                          </div>
-                          <p>Come Together. Grow Together</p>
-                      </div>
-                      <ul class="list-inline footer_social d-flex align-items-center text-center">
-                          <li><a href=""><img src="images/insta.png" alt=""></a></li>
-                          <li><a href=""><img src="images/linkedin.png" alt=""></a></li>
-                          <li><a href=""><img src="images/fb.png" alt=""></a></li>
-                      </ul>
-                  </div>
-                  </div>
-              </div>
-            </div> 
-      </div>
-      <div class="header-hamburger-items">
-        <div class="header-close">
-            <img src="images/close-icon.png" alt="">
-        </div>
-        <ul class="list-inline">
-            <li><a href="">About Us</a></li>
-            <li><a href="">Our Client</a></li>
-            <li><a href="">Our Work</a></li>
-            <li><a href="">Contact Us</a></li>
-        </ul>
-      </div> 
-    </header>
+		<section class="done-work">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 com-md-12">
+						<div class="heading text-center">
+							<h2>WORK WE HAVE DONE</h2>
+						</div>
+					</div>
+					<div class="col-12 com-md-12">
+						<div class="filter-tab">
+							<ul class="nav nav-tabs" id="myTab" role="tablist">
+								<li class="nav-item" role="presentation">
+									<button
+										class="nav-link active"
+										id="home-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#one"
+										type="button"
+										role="tab"
+										aria-controls="home"
+										aria-selected="true"
+									>
+										Miscellaneous
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button
+										class="nav-link"
+										id="profile-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#two"
+										type="button"
+										role="tab"
+										aria-controls="profile"
+										aria-selected="false"
+									>
+										Websites
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button
+										class="nav-link"
+										id="contact-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#three"
+										type="button"
+										role="tab"
+										aria-controls="contact"
+										aria-selected="false"
+									>
+										Branding
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button
+										class="nav-link"
+										id="contact-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#four"
+										type="button"
+										role="tab"
+										aria-controls="contact"
+										aria-selected="false"
+									>
+										Social Media
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button
+										class="nav-link"
+										id="contact-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#five"
+										type="button"
+										role="tab"
+										aria-controls="contact"
+										aria-selected="false"
+									>
+										UI/UX Designs
+									</button>
+								</li>
+							</ul>
+							<div class="tab-content" id="myTabContent">
+								<div
+									class="tab-pane fade show active"
+									id="one"
+									role="tabpanel"
+									aria-labelledby="home-tab"
+								>
+									<div class="tab-content-main">
+										<div class="tab-content-img-text">
+											<img
+												src="images/work/ChalksNBoard_Homepage.jpg"
+												class="w-100"
+											/>
+											<div class="work-desc">
+												<h3>CHALKS & BOARD</h3>
+												<p>
+													ChalksnBoard helps Corporates to digitize all their
+													learning needs with the power of Ai integrated
+													technology. Digitize your Inductions, get your
+													trainings online and ensure smooth Knowledge transfer
+													for core employees serving notices.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img src="images/work/Homepage1.jpg" class="w-100" />
+											<div class="work-desc">
+												<h3>NELO</h3>
+												<p>
+													Nelo provides trustable platform for Influencer
+													Marketing & collaborating with top notch brands to get
+													promote their brands hassel free. Influencer marketing
+													is one of the best ways to reach your target
+													audiences.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img
+												src="images/work/Sales Dashboard.jpg"
+												class="w-100"
+											/>
+											<div class="work-desc">
+												<h3>SPHERE</h3>
+												<p>
+													Sphere provide best product services in terms of
+													usablity, analysis, market research, effectiveness,
+													and develoment of usert friendly product.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img src="images/work/Enquire-Now.jpg" class="w-100" />
+											<div class="work-desc">
+												<h3>WANDERER ADVENTURE</h3>
+												<p>
+													Wanderer adventure provides with unique India Wildlife
+													Safari and Tours across various wildlife sanctuaries
+													and Tiger Reserves across India. The variety,
+													vibrance, and vivacity will leave you amazed and in
+													total of vast terrains which are to be explored and
+													discovered.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
 
-    <section class="social-banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-12">
-                    <div class="heading text-center">
-                        <h1>OUR PORTFOLIO</h1>
-                        <p>We own our ideas and we never fall short of them. Some see the day of light and our ambitions become reality. It's a proud moment for us when our campaigns have a measurable impact and it further encourages us to work harder with passion to own more campaigns for our exceptional clients. Have a look at some of the spectacular work we at Iekaa have executed!</p>
-                    </div>
-                    <div class="banner-img text-center">
-                        <img src="./images/work-banner.png" alt="social banner">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+								<div
+									class="tab-pane fade"
+									id="two"
+									role="tabpanel"
+									aria-labelledby="profile-tab"
+								>
+									<div class="tab-content-main">
+										<div class="tab-content-img-text">
+											<img
+												src="images/work/ChalksNBoard_Homepage.jpg"
+												class="w-100"
+											/>
+											<div class="work-desc">
+												<h3>CHALKS & BOARD</h3>
+												<p>
+													ChalksnBoard helps Corporates to digitize all their
+													learning needs with the power of Ai integrated
+													technology. Digitize your Inductions, get your
+													trainings online and ensure smooth Knowledge transfer
+													for core employees serving notices.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img src="images/work/Homepage1.jpg" class="w-100" />
+											<div class="work-desc">
+												<h3>NELO</h3>
+												<p>
+													Nelo provides trustable platform for Influencer
+													Marketing & collaborating with top notch brands to get
+													promote their brands hassel free. Influencer marketing
+													is one of the best ways to reach your target
+													audiences.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img
+												src="images/work/Sales Dashboard.jpg"
+												class="w-100"
+											/>
+											<div class="work-desc">
+												<h3>SPHERE</h3>
+												<p>
+													Sphere provide best product services in terms of
+													usablity, analysis, market research, effectiveness,
+													and develoment of usert friendly product.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img src="images/work/Enquire-Now.jpg" class="w-100" />
+											<div class="work-desc">
+												<h3>WANDERER ADVENTURE</h3>
+												<p>
+													Wanderer adventure provides with unique India Wildlife
+													Safari and Tours across various wildlife sanctuaries
+													and Tiger Reserves across India. The variety,
+													vibrance, and vivacity will leave you amazed and in
+													total of vast terrains which are to be explored and
+													discovered.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
 
-<section class="done-work">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 com-md-12">
-                <div class="heading text-center">
-                    <h2>WORK WE HAVE DONE</h2>
-                </div>
-            </div>
-            <div class="col-12 com-md-12">
-                <div class="filter-tab">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#one" type="button" role="tab" aria-controls="home" aria-selected="true">Miscellaneous</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#two" type="button" role="tab" aria-controls="profile" aria-selected="false">Websites</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#three" type="button" role="tab" aria-controls="contact" aria-selected="false">Branding</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#four" type="button" role="tab" aria-controls="contact" aria-selected="false">Social Media</button>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#five" type="button" role="tab" aria-controls="contact" aria-selected="false">UI/UX Designs</button>
-                          </li>
-                      </ul>
-                      <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="home-tab">
-                                <div class="tab-content-main">
-                                    <div class="tab-content-img-text">
-                                    <img src="images/work/ChalksNBoard_Homepage.jpg" class="w-100">
-                                    <div class="work-desc">
-                                        <h3>CHALKS & BOARD</h3>
-                                        <p>ChalksnBoard helps Corporates to digitize all their learning needs with the power of Ai integrated technology. Digitize your Inductions, get your trainings online and ensure smooth Knowledge transfer for core employees serving notices.</p>
-                                    </div>
-                                    </div>
-                                    <div class="tab-content-img-text">
-                                        <img src="images/work/Homepage1.jpg" class="w-100">
-                                        <div class="work-desc">
-                                            <h3>NELO</h3>
-                                            <p>Nelo provides trustable platform for Influencer Marketing & collaborating with top notch brands to get promote their brands hassel free. Influencer marketing is one of the best ways to reach your target audiences.</p>
-                                        </div>
-                                        </div>
-                                        <div class="tab-content-img-text">
-                                            <img src="images/work/Sales Dashboard.jpg" class="w-100">
-                                            <div class="work-desc">
-                                                <h3>SPHERE</h3>
-                                                <p>Sphere provide best product services in terms of usablity, analysis, market research, effectiveness, and develoment of usert friendly product.</p>
-                                            </div>
-                                            </div>
-                                            <div class="tab-content-img-text">
-                                                <img src="images/work/Enquire-Now.jpg" class="w-100">
-                                                <div class="work-desc">
-                                                    <h3>WANDERER ADVENTURE</h3>
-                                                    <p>Wanderer adventure provides with unique India Wildlife Safari  and Tours across various wildlife sanctuaries and Tiger Reserves across India. The variety, vibrance, and vivacity will leave you amazed and in total of vast terrains which are to be explored and discovered.</p>
-                                                </div>
-                                                </div>
-                                </div>
-                        </div>
+								<div
+									class="tab-pane fade"
+									id="three"
+									role="tabpanel"
+									aria-labelledby="contact-tab"
+								>
+									<div class="tab-content-main">
+										<div class="tab-content-img-text">
+											<img
+												src="images/work/ChalksNBoard_Homepage.jpg"
+												class="w-100"
+											/>
+											<div class="work-desc">
+												<h3>CHALKS & BOARD</h3>
+												<p>
+													ChalksnBoard helps Corporates to digitize all their
+													learning needs with the power of Ai integrated
+													technology. Digitize your Inductions, get your
+													trainings online and ensure smooth Knowledge transfer
+													for core employees serving notices.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img src="images/work/Homepage1.jpg" class="w-100" />
+											<div class="work-desc">
+												<h3>NELO</h3>
+												<p>
+													Nelo provides trustable platform for Influencer
+													Marketing & collaborating with top notch brands to get
+													promote their brands hassel free. Influencer marketing
+													is one of the best ways to reach your target
+													audiences.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img
+												src="images/work/Sales Dashboard.jpg"
+												class="w-100"
+											/>
+											<div class="work-desc">
+												<h3>SPHERE</h3>
+												<p>
+													Sphere provide best product services in terms of
+													usablity, analysis, market research, effectiveness,
+													and develoment of usert friendly product.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img src="images/work/Enquire-Now.jpg" class="w-100" />
+											<div class="work-desc">
+												<h3>WANDERER ADVENTURE</h3>
+												<p>
+													Wanderer adventure provides with unique India Wildlife
+													Safari and Tours across various wildlife sanctuaries
+													and Tiger Reserves across India. The variety,
+													vibrance, and vivacity will leave you amazed and in
+													total of vast terrains which are to be explored and
+													discovered.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="tab-pane fade"
+									id="four"
+									role="tabpanel"
+									aria-labelledby="contact-tab"
+								>
+									<div class="tab-content-main">
+										<div class="tab-content-img-text">
+											<img
+												src="images/work/ChalksNBoard_Homepage.jpg"
+												class="w-100"
+											/>
+											<div class="work-desc">
+												<h3>CHALKS & BOARD</h3>
+												<p>
+													ChalksnBoard helps Corporates to digitize all their
+													learning needs with the power of Ai integrated
+													technology. Digitize your Inductions, get your
+													trainings online and ensure smooth Knowledge transfer
+													for core employees serving notices.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img src="images/work/Homepage1.jpg" class="w-100" />
+											<div class="work-desc">
+												<h3>NELO</h3>
+												<p>
+													Nelo provides trustable platform for Influencer
+													Marketing & collaborating with top notch brands to get
+													promote their brands hassel free. Influencer marketing
+													is one of the best ways to reach your target
+													audiences.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img
+												src="images/work/Sales Dashboard.jpg"
+												class="w-100"
+											/>
+											<div class="work-desc">
+												<h3>SPHERE</h3>
+												<p>
+													Sphere provide best product services in terms of
+													usablity, analysis, market research, effectiveness,
+													and develoment of usert friendly product.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img src="images/work/Enquire-Now.jpg" class="w-100" />
+											<div class="work-desc">
+												<h3>WANDERER ADVENTURE</h3>
+												<p>
+													Wanderer adventure provides with unique India Wildlife
+													Safari and Tours across various wildlife sanctuaries
+													and Tiger Reserves across India. The variety,
+													vibrance, and vivacity will leave you amazed and in
+													total of vast terrains which are to be explored and
+													discovered.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="tab-pane fade"
+									id="five"
+									role="tabpanel"
+									aria-labelledby="contact-tab"
+								>
+									<div class="tab-content-main">
+										<div class="tab-content-img-text">
+											<img
+												src="images/work/ChalksNBoard_Homepage.jpg"
+												class="w-100"
+											/>
+											<div class="work-desc">
+												<h3>CHALKS & BOARD</h3>
+												<p>
+													ChalksnBoard helps Corporates to digitize all their
+													learning needs with the power of Ai integrated
+													technology. Digitize your Inductions, get your
+													trainings online and ensure smooth Knowledge transfer
+													for core employees serving notices.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img src="images/work/Homepage1.jpg" class="w-100" />
+											<div class="work-desc">
+												<h3>NELO</h3>
+												<p>
+													Nelo provides trustable platform for Influencer
+													Marketing & collaborating with top notch brands to get
+													promote their brands hassel free. Influencer marketing
+													is one of the best ways to reach your target
+													audiences.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img
+												src="images/work/Sales Dashboard.jpg"
+												class="w-100"
+											/>
+											<div class="work-desc">
+												<h3>SPHERE</h3>
+												<p>
+													Sphere provide best product services in terms of
+													usablity, analysis, market research, effectiveness,
+													and develoment of usert friendly product.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img src="images/work/Enquire-Now.jpg" class="w-100" />
+											<div class="work-desc">
+												<h3>WANDERER ADVENTURE</h3>
+												<p>
+													Wanderer adventure provides with unique India Wildlife
+													Safari and Tours across various wildlife sanctuaries
+													and Tiger Reserves across India. The variety,
+													vibrance, and vivacity will leave you amazed and in
+													total of vast terrains which are to be explored and
+													discovered.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-                        <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="profile-tab">
-                            <div class="tab-content-main">
-                                <div class="tab-content-img-text">
-                                <img src="images/work/ChalksNBoard_Homepage.jpg" class="w-100">
-                                <div class="work-desc">
-                                    <h3>CHALKS & BOARD</h3>
-                                    <p>ChalksnBoard helps Corporates to digitize all their learning needs with the power of Ai integrated technology. Digitize your Inductions, get your trainings online and ensure smooth Knowledge transfer for core employees serving notices.</p>
-                                </div>
-                                </div>
-                                <div class="tab-content-img-text">
-                                    <img src="images/work/Homepage1.jpg" class="w-100">
-                                    <div class="work-desc">
-                                        <h3>NELO</h3>
-                                        <p>Nelo provides trustable platform for Influencer Marketing & collaborating with top notch brands to get promote their brands hassel free. Influencer marketing is one of the best ways to reach your target audiences.</p>
-                                    </div>
-                                    </div>
-                                    <div class="tab-content-img-text">
-                                        <img src="images/work/Sales Dashboard.jpg" class="w-100">
-                                        <div class="work-desc">
-                                            <h3>SPHERE</h3>
-                                            <p>Sphere provide best product services in terms of usablity, analysis, market research, effectiveness, and develoment of usert friendly product.</p>
-                                        </div>
-                                        </div>
-                                        <div class="tab-content-img-text">
-                                            <img src="images/work/Enquire-Now.jpg" class="w-100">
-                                            <div class="work-desc">
-                                                <h3>WANDERER ADVENTURE</h3>
-                                                <p>Wanderer adventure provides with unique India Wildlife Safari  and Tours across various wildlife sanctuaries and Tiger Reserves across India. The variety, vibrance, and vivacity will leave you amazed and in total of vast terrains which are to be explored and discovered.</p>
-                                            </div>
-                                            </div>
-                            </div>
-                        </div>
+		<section class="app-design">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6 col-lg-6 col-xs-12">
+						<div class="mobile-left">
+							<h2>Mobile App Designs</h2>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xs-12">
+						<div class="mobile-right">
+							<div class="mobile-slider">
+								<div class="mobile-slider-img">
+									<img
+										src="images/work/mobile-screen1.png"
+										alt=""
+										class="w-100"
+									/>
+								</div>
+								<div class="mobile-slider-img">
+									<img
+										src="images/work/mobile-screen2.png"
+										alt=""
+										class="w-100"
+									/>
+								</div>
+								<div class="mobile-slider-img">
+									<img
+										src="images/work/mobile-screen3.png"
+										alt=""
+										class="w-100"
+									/>
+								</div>
+								<div class="mobile-slider-img">
+									<img
+										src="images/work/mobile-screen4.png"
+										alt=""
+										class="w-100"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-                        <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="contact-tab">
-                            <div class="tab-content-main">
-                                <div class="tab-content-img-text">
-                                <img src="images/work/ChalksNBoard_Homepage.jpg" class="w-100">
-                                <div class="work-desc">
-                                    <h3>CHALKS & BOARD</h3>
-                                    <p>ChalksnBoard helps Corporates to digitize all their learning needs with the power of Ai integrated technology. Digitize your Inductions, get your trainings online and ensure smooth Knowledge transfer for core employees serving notices.</p>
-                                </div>
-                                </div>
-                                <div class="tab-content-img-text">
-                                    <img src="images/work/Homepage1.jpg" class="w-100">
-                                    <div class="work-desc">
-                                        <h3>NELO</h3>
-                                        <p>Nelo provides trustable platform for Influencer Marketing & collaborating with top notch brands to get promote their brands hassel free. Influencer marketing is one of the best ways to reach your target audiences.</p>
-                                    </div>
-                                    </div>
-                                    <div class="tab-content-img-text">
-                                        <img src="images/work/Sales Dashboard.jpg" class="w-100">
-                                        <div class="work-desc">
-                                            <h3>SPHERE</h3>
-                                            <p>Sphere provide best product services in terms of usablity, analysis, market research, effectiveness, and develoment of usert friendly product.</p>
-                                        </div>
-                                        </div>
-                                        <div class="tab-content-img-text">
-                                            <img src="images/work/Enquire-Now.jpg" class="w-100">
-                                            <div class="work-desc">
-                                                <h3>WANDERER ADVENTURE</h3>
-                                                <p>Wanderer adventure provides with unique India Wildlife Safari  and Tours across various wildlife sanctuaries and Tiger Reserves across India. The variety, vibrance, and vivacity will leave you amazed and in total of vast terrains which are to be explored and discovered.</p>
-                                            </div>
-                                            </div>
-                            </div>
+		<section class="projects">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-12">
+						<div class="filter-tab">
+							<div class="tab-content">
+								<div class="tab-content-main">
+									<div class="tab-content-main">
+										<div class="tab-content-img-text">
+											<img src="images/work/Cofie.jpg" class="w-100" />
+											<div class="work-desc">
+												<h3>COFIE</h3>
+												<p>
+													Cofie gives you an unique experience of taking and
+													sharing selfie while having online chat or
+													conversation with your loved once without pausing or
+													any break through an exiting application.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img src="images/work/GST_Trainer.jpg" class="w-100" />
+											<div class="work-desc">
+												<h3>GST TRAINER</h3>
+												<p>
+													. GST Trainer is a destination based tax which is
+													levied on consumption of goods and services. It is
+													levied at all stages right from manufacture up to
+													final consumption with credit for tax paid at previous
+													stage available for set off as input credit of taxes.
+													In nutshell only value addition will be taxed and
+													burden of tax will be borne by the final consumer.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img src="images/work/AA_Logo.jpg" class="w-100" />
+											<div class="work-desc">
+												<h3>COFIE</h3>
+												<p>
+													Anantaya Adityai logo design for manufacting &
+													distributing electric fragrance diffuser.
+												</p>
+											</div>
+										</div>
+										<div class="tab-content-img-text">
+											<img
+												src="images/work/MappsOnApps_Logo.jpg"
+												class="w-100"
+											/>
+											<div class="work-desc">
+												<h3>GST TRAINER</h3>
+												<p>
+													Maps on apps logo design for monitoring and tracking
+													application.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-                        </div>
-                        <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="contact-tab">
-                            <div class="tab-content-main">
-                                <div class="tab-content-img-text">
-                                <img src="images/work/ChalksNBoard_Homepage.jpg" class="w-100">
-                                <div class="work-desc">
-                                    <h3>CHALKS & BOARD</h3>
-                                    <p>ChalksnBoard helps Corporates to digitize all their learning needs with the power of Ai integrated technology. Digitize your Inductions, get your trainings online and ensure smooth Knowledge transfer for core employees serving notices.</p>
-                                </div>
-                                </div>
-                                <div class="tab-content-img-text">
-                                    <img src="images/work/Homepage1.jpg" class="w-100">
-                                    <div class="work-desc">
-                                        <h3>NELO</h3>
-                                        <p>Nelo provides trustable platform for Influencer Marketing & collaborating with top notch brands to get promote their brands hassel free. Influencer marketing is one of the best ways to reach your target audiences.</p>
-                                    </div>
-                                    </div>
-                                    <div class="tab-content-img-text">
-                                        <img src="images/work/Sales Dashboard.jpg" class="w-100">
-                                        <div class="work-desc">
-                                            <h3>SPHERE</h3>
-                                            <p>Sphere provide best product services in terms of usablity, analysis, market research, effectiveness, and develoment of usert friendly product.</p>
-                                        </div>
-                                        </div>
-                                        <div class="tab-content-img-text">
-                                            <img src="images/work/Enquire-Now.jpg" class="w-100">
-                                            <div class="work-desc">
-                                                <h3>WANDERER ADVENTURE</h3>
-                                                <p>Wanderer adventure provides with unique India Wildlife Safari  and Tours across various wildlife sanctuaries and Tiger Reserves across India. The variety, vibrance, and vivacity will leave you amazed and in total of vast terrains which are to be explored and discovered.</p>
-                                            </div>
-                                            </div>
-                            </div>
+		<section class="social-form">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-lg-5 col-12 col-xxl-5">
+						<div class="left-sec">
+							<div class="heading">
+								<p class="title">Let’s <span>Scale</span></p>
+								<h2>YOUR BRAND TOGETHER</h2>
+							</div>
+							<p>
+								Connect with us to scaling your brand that involves growing its
+								presence, influence, and customer base while maintaining its
+								core values and identity.
+							</p>
 
-                        </div>
-                        <div class="tab-pane fade" id="five" role="tabpanel" aria-labelledby="contact-tab">
-                            <div class="tab-content-main">
-                                <div class="tab-content-img-text">
-                                <img src="images/work/ChalksNBoard_Homepage.jpg" class="w-100">
-                                <div class="work-desc">
-                                    <h3>CHALKS & BOARD</h3>
-                                    <p>ChalksnBoard helps Corporates to digitize all their learning needs with the power of Ai integrated technology. Digitize your Inductions, get your trainings online and ensure smooth Knowledge transfer for core employees serving notices.</p>
-                                </div>
-                                </div>
-                                <div class="tab-content-img-text">
-                                    <img src="images/work/Homepage1.jpg" class="w-100">
-                                    <div class="work-desc">
-                                        <h3>NELO</h3>
-                                        <p>Nelo provides trustable platform for Influencer Marketing & collaborating with top notch brands to get promote their brands hassel free. Influencer marketing is one of the best ways to reach your target audiences.</p>
-                                    </div>
-                                    </div>
-                                    <div class="tab-content-img-text">
-                                        <img src="images/work/Sales Dashboard.jpg" class="w-100">
-                                        <div class="work-desc">
-                                            <h3>SPHERE</h3>
-                                            <p>Sphere provide best product services in terms of usablity, analysis, market research, effectiveness, and develoment of usert friendly product.</p>
-                                        </div>
-                                        </div>
-                                        <div class="tab-content-img-text">
-                                            <img src="images/work/Enquire-Now.jpg" class="w-100">
-                                            <div class="work-desc">
-                                                <h3>WANDERER ADVENTURE</h3>
-                                                <p>Wanderer adventure provides with unique India Wildlife Safari  and Tours across various wildlife sanctuaries and Tiger Reserves across India. The variety, vibrance, and vivacity will leave you amazed and in total of vast terrains which are to be explored and discovered.</p>
-                                            </div>
-                                            </div>
-                            </div>
+							<div class="socialseo-img">
+								<img src="images/branding/brand-form.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-lg-2 d-xs-none col-xxl-2"></div>
+					<div class="col-md-5 col-lg-5 col-12 col-xxl-5">
+						<div class="right-sec contact">
+							<form action="">
+								<div class="input-group">
+									<span class="input-group-text" id="basic-addon1"
+										><img src="images/social/form-user.png" alt=""
+									/></span>
+									<input
+										type="text"
+										class="form-control"
+										placeholder="Your Name"
+										aria-label="Your Name"
+										aria-describedby="basic-addon1"
+									/>
+								</div>
 
-                        </div>
-                      </div>
-                </div>
-            </div>
+								<div class="input-group">
+									<span class="input-group-text" id="basic-addon1"
+										><img src="images/social/form-company.png" alt=""
+									/></span>
+									<input
+										type="text"
+										class="form-control"
+										placeholder="Company Name"
+										aria-label="Company Name"
+										aria-describedby="basic-addon1"
+									/>
+								</div>
+								<div class="input-group">
+									<span class="input-group-text" id="basic-addon1"
+										><img src="images/social/form-email.png" alt=""
+									/></span>
+									<input
+										type="text"
+										class="form-control"
+										placeholder="Email Address"
+										aria-label="Email Address"
+										aria-describedby="basic-addon1"
+									/>
+								</div>
+								<div class="input-group">
+									<textarea placeholder="How can i help you"></textarea>
+								</div>
+								<div class="input-group">
+									<button class="def_btn">
+										Send Message
+										<img src="images/banner-right-arrow.png" alt="" />
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        </div>
-    </div>
-</section>
-    
-<section class="app-design">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 col-lg-6 col-xs-12">
-                <div class="mobile-left">
-                    <h2>Mobile
-                        App
-                        Designs</h2>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xs-12">
-                <div class="mobile-right">
-                    <div class="mobile-slider">
-                        <div class="mobile-slider-img">
-                            <img src="images/work/mobile-screen1.png" alt="" class="w-100">
-                        </div>
-                        <div class="mobile-slider-img">
-                            <img src="images/work/mobile-screen2.png" alt="" class="w-100">
-                        </div>
-                        <div class="mobile-slider-img">
-                            <img src="images/work/mobile-screen3.png" alt=""  class="w-100">
-                        </div>
-                        <div class="mobile-slider-img">
-                            <img src="images/work/mobile-screen4.png" alt="" class="w-100">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+		<footer class="new-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="footer_inner">
+							<div class="footer_menu">
+								<ul
+									class="list-inline footer_menu d-flex justify-content-evenly"
+								>
+									<li><a href="about.html">About us</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="work.html">Our Work </a></li>
+									<li><a href="contact.html">Contact Us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-mail">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-1 col-xl-1 d-xs-none"></div>
+						<div class="col-12 col-md-3 col-xl-3">
+							<div class="mail-text">
+								<p>Get in touch with us</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-7 col-xl-7">
+							<div class="mail-form">
+								<form>
+									<input type="text" placeholder="Enter your email here.." />
+									<button type="submit">Submit</button>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-1 col-xl-1 d-xs-none"></div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom_footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-12">
+							<div class="left_col m-0">
+								<p class="text-start text-white m-0">
+									2023 iekaa Advertising. All Rights Reserved
+								</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-12">
+							<div class="left_col">
+								<ul class="list-inline d-flex m-0 justify-content-end">
+									<li>
+										<a
+											href="term-conditions.html"
+											class="text-white text-decoration-none"
+											>Terms of Use</a
+										>
+									</li>
+									<li>
+										<a
+											href="Disclaimer.html"
+											class="text-white text-decoration-none"
+											>Disclaimer</a
+										>
+									</li>
+									<li>
+										<a
+											href="privacy-policy.html"
+											class="text-white text-decoration-none"
+											>Privacy Policy</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-
-<section class="projects">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-12">
-                <div class="filter-tab">
-                    <div class="tab-content">
-                        <div class="tab-content-main">
-                    
-
-                    <div class="tab-content-main">
-                        <div class="tab-content-img-text">
-                        <img src="images/work/Cofie.jpg" class="w-100">
-                        <div class="work-desc">
-                            <h3>COFIE</h3>
-                            <p>Cofie gives you an unique experience of taking and sharing selfie while having online chat or conversation with your loved once without pausing or any break through an exiting 
-                                application.</p>
-                        </div>
-                        </div>
-                        <div class="tab-content-img-text">
-                            <img src="images/work/GST_Trainer.jpg" class="w-100">
-                            <div class="work-desc">
-                                <h3>GST TRAINER</h3>
-                                <p>. GST Trainer is a destination based tax which is levied on consumption of goods and services. It is levied at all stages right from manufacture up to final consumption with credit for tax paid at previous stage available for set off as input credit of taxes. In nutshell only value addition will be taxed and burden of tax will be borne by the final consumer.</p>
-                            </div>
-                            </div>
-                            <div class="tab-content-img-text">
-                                <img src="images/work/AA_Logo.jpg" class="w-100">
-                                <div class="work-desc">
-                                    <h3>COFIE</h3>
-                                    <p>Anantaya Adityai logo design for manufacting & 
-                                        distributing electric fragrance diffuser.</p>
-                                </div>
-                                </div>
-                                <div class="tab-content-img-text">
-                                    <img src="images/work/MappsOnApps_Logo.jpg" class="w-100">
-                                    <div class="work-desc">
-                                        <h3>GST TRAINER</h3>
-                                        <p>Maps on apps logo design for monitoring and tracking 
-                                            application.</p>
-                                    </div>
-                                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-</section>
-
-
-
-    <section class="social-form">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-lg-5 col-12 col-xxl-5">
-                    <div class="left-sec">
-                        <div class="heading">
-                            
-                            <p class="title">Let’s <span>Scale</span></p>
-                            <h2>YOUR BRAND TOGETHER</h2>
-                        </div>
-                        <p>Connect with us to scaling your brand that involves growing its presence, influence, and customer base while maintaining its core values and identity.</p>
-
-                        <div class="socialseo-img">
-                            <img src="images/branding/brand-form.png" alt="">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-lg-2 d-xs-none col-xxl-2"></div>
-                <div class="col-md-5 col-lg-5 col-12 col-xxl-5">
-                    <div class="right-sec contact">
-                        <form action="">
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1"><img src="images/social/form-user.png"
-                                        alt=""></span>
-                                <input type="text" class="form-control" placeholder="Your Name" aria-label="Your Name"
-                                    aria-describedby="basic-addon1">
-                            </div>
-
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1"><img
-                                        src="images/social/form-company.png" alt=""></span>
-                                <input type="text" class="form-control" placeholder="Company Name"
-                                    aria-label="Company Name" aria-describedby="basic-addon1">
-                            </div>
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1"><img src="images/social/form-email.png"
-                                        alt=""></span>
-                                <input type="text" class="form-control" placeholder="Email Address"
-                                    aria-label="Email Address" aria-describedby="basic-addon1">
-                            </div>
-                            <div class="input-group">
-                                <textarea placeholder="How can i help you"></textarea>
-                            </div>
-                            <div class="input-group">
-                                <button class="def_btn">Send Message <img src="images/banner-right-arrow.png"
-                                        alt=""></button>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="new-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer_inner">
-                        <div class="footer_menu">
-                            <ul class="list-inline footer_menu d-flex justify-content-evenly">
-                                <li><a href="about.html">About us</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="work.html">Our Work </a></li>
-<li><a href="contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-mail">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-1 col-xl-1 d-xs-none"></div>
-                    <div class="col-12 col-md-3 col-xl-3">
-                        <div class="mail-text">
-                            <p>Get in touch with us</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-7 col-xl-7">
-                        <div class="mail-form">
-                            <form>
-                                <input type="text" placeholder="Enter your email here..">
-                                <button type="submit">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-md-1 col-xl-1 d-xs-none"></div>
-
-                </div>
-            </div>
-        </div>
-        <div class="bottom_footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-12">
-                        <div class="left_col m-0">
-                            <p class="text-start text-white m-0">2023 iekaa Advertising. All Rights Reserved</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="left_col">
-                            <ul class="list-inline d-flex m-0 justify-content-end">
-                                <li><a href="term-conditions.html" class="text-white text-decoration-none">Terms of Use</a></li>
-                                <li><a href="Disclaimer.html" class="text-white text-decoration-none">Disclaimer</a></li>
-                                <li><a href="privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/custom.js"></script>
-
-</body>
-
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
 </html>
