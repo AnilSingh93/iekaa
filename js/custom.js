@@ -22,7 +22,9 @@ $(document).on("click", ".header-hamburger-items .header-close img", function ()
 $(document).ready(function () {
   $(".website-center-inner").slick({
     arrows: false,
-    dots: true
+    dots: true,
+    adaptiveHeight: true,
+
   })
 
   $(".marketing-inner").slick({
@@ -30,6 +32,9 @@ $(document).ready(function () {
     slidesToScroll: 4,
     arrows: false,
     dots: true,
+    autoplay: true,
+    infinte: true,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1024,
@@ -68,7 +73,7 @@ $(document).ready(function () {
   })
   $(".client-main").slick({
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     arrows: false,
     dots: true,
     adaptiveHeight: true,
