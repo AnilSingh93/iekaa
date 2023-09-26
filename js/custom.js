@@ -17,6 +17,8 @@ $(document).on("click", ".header-hamburger-items .header-close img", function ()
   $("body").children(".body-overlay").remove();
   $(".header_side_menu").removeClass("open");
   $(".header-hamburger-items").removeClass("open");
+
+
 })
 
 $(document).ready(function () {
@@ -140,3 +142,15 @@ $(document).ready(function () {
 })
 
 
+/*** lightbox *******/
+
+/*
+$('.parallax-img').click(function(){
+  var allImages = $(this).parent('.work_img').parent('.work_box_img');
+ var src = $(this).attr("src");
+ $("#lightbox_modal").show();
+ $("#lightbox_modal .modal-body img").attr("src",src);;
+ console.log(allImages);
+ 
+});
+*/
